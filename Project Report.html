@@ -30,63 +30,59 @@
         </div>   
     </div>
 
-        <main>
-            <section class="dashboard-summary">
-                <h2>สรุปภาพรวม</h2>
-                <div class="summary-cards">
-                    <div class="card">
-                        <h3>โครงการทั้งหมด</h3>
-                        <p>12</p>
-                    </div>
+    <main>
+        <div class="profile">
+            <h3>ข้อมูลอาจารย์</h3>
+            <p><strong>ชื่อ:</strong> ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ </p>
+            <p><strong>ภาควิชา:</strong> ภาควิชาเทคโนโลยีสารสนเทศ </p>
+            <p><strong>อีเมล:</strong> supaporn.s@itm.kmutnb.ac.th </p>
+        </div>
 
-                    <div class="card">
-                        <h3>รออนุมัติ</h3>
-                        <p>3</p>
-                    </div>
-
-                    <div class="card">
-                        <h3>รอตรวจสอบ</h3>
-                        <p>2</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="student-list">
-                <h2>นักศึกษาที่ดูแลล่าสุด</h2>
-
-                <table>
-                 <thead>
-                     <tr>
-                         <th>ชื่อนักศึกษา</th>
-                         <th>ชื่อโครงการ</th>
-                         <th>ความคืบหน้า</th>
-                     </tr>
-                 </thead>
-                    <tbody>
-                     <tr>
-                        <td>น.ส.นันทิชา ไชยขวัญดี</td>
-                        <td>การวางระบบเครื่อข่าย</td>
-                        <td>80%</td>
-                     </tr>
-
-                     <tr>
-                        <td>น.ส.นันทิชา ไชยขวัญดี</td>
+        <div class="projects">
+            <h3>โครงงานที่ดูแล</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ชื่อโครงงาน</th>
+                        <th>นักศึกษา</th>
+                        <th>สถานะ</th>
+                        <th>รายงาน</th>
+                        <th>การจัดการ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
                         <td>ระบบป้องกันเครื่อข่าย</td>
-                        <td>60%</td>
-                     </tr>
-                    </tbody>
-                </table>
-            </section>
+                        <td>น.ส.นันทิชา ไชยขวัญดี</td>
+                        <td>รอตรวจ</td>
+                        <td><a href="#">ดาวน์โหลด</a></td>
+                        <td>
+                            <button class="approve">อนุมัติ</button>
+                            <button class="reject">ส่งกลับ</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>การวางระบบเครื่อข่าย</td>
+                        <td>น.ส.นันทิชา ไชยขวัญดี</td>
+                        <td>ผ่าน</td>
+                        <td><a href="#">ดาวน์โหลด</a></td>
+                        <td>
+                            <button class="approve">อนุมัติ</button>
+                            <button class="reject">ส่งกลับ</button>
+                        </td>
+                    </tr>
+                    <!-- เอาไว้เพิ่มโครงงาน -->
+                </tbody>
+            </table>
+        </div>
 
-            <section class="notifications">
-                <h2>ประกาศ / แจ้งเตือน</h2>
-                <ul>
-                    <li> มีนักศึกษา 2 คนยังไม่ส่งรายงานความก้าวหน้า</li>
-                    <li> ระบบจะปิดรับรายงานในวันที่ 17 ตุลาคม</li>
-                </ul>
-            </section>
-        </main>
-
+        <section class="feedback">
+            <h3>ให้คำแนะนำ</h3>
+            <textarea placeholder="เขียนคำแนะนำสำหรับนักศึกษา..."></textarea>
+            <br>
+            <button class="submit">ส่งคำแนะนำ</button>
+        </section>
+    </main>
 
 </body>
 </html>
