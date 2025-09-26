@@ -381,3 +381,24 @@ textarea {
   border-left: 5px solid #ffc107;
 }
 /*จบส่วนของประกาศ*/
+
+/*ส่วนของรายละเอียดโครงงาน*/
+.project-detail {
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.project-info p,
+.project-info ul {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.project-info ul {
+  list-style: disc;
+  margin-left: 30px;
+}
+/*จบส่วนของรายละเอียดโครงงาน*/
+
+
