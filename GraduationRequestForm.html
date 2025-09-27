@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div id="page">
+    <header>
+        <div class="left">
+            <img src="../immge/kmutnb.jpg" alt="KMUTNB logo">
+            <div class="title">
+                <h1>ระบบจัดการโครงการนักศึกษา</h1>
+                <p>Student Project Management System-Presentation Mockup</p>
+            </div>
+        </div>
+        <div class="right">
+            ภาคเรียนที่ 1 ปีการศึกษา 2568
+        </div>
+    </header>
+    <div class="topnav">
+        <li><a href="../homepage.html">หน้าหลัก</a></li>
+        <li><a href="../testFinal.html">ติดตามผลสอบ</a></li>
+        <li><a href="ProjectDetails.html">รายละเอียดโครงงาน</a></li>
+        <li><a href="GraduationRequestForm.html">ยื่นคำร้องขอจบ</a></li>
+        <li><a href="../Contact the teacher.html">ติดต่ออาจารย์ที่ปรึกษา</a></li>
+        <div class="login">
+        <li><a href="../homepage.html">ออกจากระบบ</a></li>
+        <img src="../immge/นักศึกษาชาย.jpg" class="profile-pic">
+        </div>   
+    </div>
+    
+    <div class="form-container">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="fullname">ชื่อ - นามสกุล</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="studentid">รหัสนักศึกษา</label>
+            <input type="text" id="studentid" name="studentid" required>
+
+            <label for="faculty">คณะ</label>
+                <select id="faculty" name="faculty" required>
+                    <option value="">กรุณาเลือกคณะ</option>
+                    <option value="engineering">คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                    <option value="science">คณะบริหารธุรกิจและอุตสาหกรรมบริการ</option>
+                    <option value="business">คณะอุตสาหกรรมเกษตรดิจิทัล</option>
+                </select>
+
+             <label for="department">ภาควิชา</label>
+                <select id="department" name="department" required>
+                    <option value="">กรุณาเลือกภาควิชา</option>
+                    <option value="computer">ภาควิชาเทคโนโลยีสารสนเทศ(IT)</option>
+                    <option value="mechanical">ภาควิชาการจัดการอุตสาหกรรม(IM)</option>
+                    <option value="civil">ภาควิชาการออกแบบและบริการงานก่อสร้าง(CDM)</option>
+                    <option value="business_management">ภาควิชาวิศวกรรมเกษตรเพื่ออุตสาหกรรม(AEI)</option>
+                </select>
+
+            <label for="major">สาขา</label>
+                <select id="major" name="major" required>
+                    <option value="">กรุณาเลือกสาขาวิชา</option>
+                    <option value="it">สาขาวิชาเทคโนโลยีสารสนเทศ (IT)</option>
+                    <option value="iti">สาขาวิชาเทคโนโลยีสารสนเทศ (ITI)</option>
+                    <option value="ine">สาขาวิชาวิศวกรรมสารสนเทศและเครือข่าย (INE)</option>
+                    <option value="inet">สาขาวิชาวิศวกรรมสารสนเทศและเครือข่าย (INET)</option>
+                    <option value="iem">สาขาวิชาวิศวกรรมอุตสาหการและการจัดการ (IEM)</option>
+                    <option value="imt">สาขาวิชาการจัดการอุตสาหกรรม (IMT)</option>
+                    <option value="mm">สาขาวิชาเทคโนโลยีเครื่องกลและกระบวนการผลิต (MM)</option>
+                    <option value="mmt">สาขาวิชาเทคโนโลยีเครื่องกลและกระบวนการผลิต (MMT)</option>
+                    <option value="afe">สาขาวิชาวิศวกรรมเกษตรและอาหาร (AFE)</option>
+                    <option value="afet">สาขาวิชาวิศวกรรมเกษตรและอาหาร (AFET)</option>
+                    <option value="ca">สาขาวิชาคอมพิวเตอร์ช่วยออกแบบและบริหารงานก่อสร้าง (CA)</option>
+                    <option value="cdm">สาขาวิชาคอมพิวเตอร์ช่วยออกแบบและบริหารงานก่อสร้าง (CDM)</option>
+                </select>
+
+            <label for="email">อีเมล</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">เบอร์โทรศัพท์</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="graduation-term">ภาคเรียนที่ขอจบ</label>
+            <input type="text" id="graduation-term" name="graduation-term" placeholder="เช่น 2/2568" required>
+
+            <label for="note">หมายเหตุเพิ่มเติม</label>
+            <textarea id="note" name="note" rows="4" placeholder="ใส่เหตุผลหรือหมายเหตุเพิ่มเติม..."></textarea>
+
+            <label for="file">อัปโหลดไฟล์หลักฐาน (เช่น Transcript)</label>
+            <input type="file" id="file" name="file" accept=".pdf,.jpg,.png" required>
+
+            <button type="submit">ยื่นคำร้อง</button>
+        </form>
+    </div>
+     
+
+</body>
+</html>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+        <h3>อื่นๆ</h3>
+        <ul>
+            <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1y7vnPRgfEhYKhXQVbHxwsdwM1kdxrpRc%2Fview%3Fusp%3Dsharing&h=AT25me3oUQqxi9kQCxX723da5SBsMU1qLoboOF0MvWpid5MX52f6VdV5v-VOSPSlpVg5EVGWXq1_64Xk5VHzoolRpxXp72QIjt1g5WW40QYoexaRIpDLNfTcZXRxVuRxIP4BPuu4AQGm6CdcAUkDDjXAqPFhnFmK&__tn__=-UK-R&c[0]=AT3jlIObfIGGfA3A1uBpUL9n6qO4dfWgmYJJGgrRZIVycCSb6PFWXJZquHACZHZ_xN76WsmucF2PlLvqiHFimAsaI0_X6tBO6fKDu2IofnuPZh18OnkwdcR1jJolVD-XeeUT14CjoUyNW5YnwDRkDHma8PINo7loERYWuIHmM55c4wUAAMAKe-ZaM-3QYr4">ตารางสอบ</a></li>
+            <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1KU2qisg69m7mp3FwvtxrbTMmTbRrFdX_%3Fusp%3Ddrive_link&h=AT3XYAvYiVkW2-9SV7d4Wmsa3nmCkm_zIKGf27iGDHTfINFL9bAoGEID-Rav28gQLfcZCVVW1GfgNA-xNJzMBCzmkcAcDodnrK3jdiVZ2JpGjAs_no-WSH-b2FDAVVXIWPn8gqgz5Bi99y6MW23T6I2y56o2pK3g&__tn__=-UK-R&c[0]=AT3jlIObfIGGfA3A1uBpUL9n6qO4dfWgmYJJGgrRZIVycCSb6PFWXJZquHACZHZ_xN76WsmucF2PlLvqiHFimAsaI0_X6tBO6fKDu2IofnuPZh18OnkwdcR1jJolVD-XeeUT14CjoUyNW5YnwDRkDHma8PINo7loERYWuIHmM55c4wUAAMAKe-ZaM-3QYr4">ตรวจสอบรายชื่อสอบ</a></li>
+        </ul>
+        </div>
+        <div class="footer-right">
+            <h3>ติดต่อ มจพ. ปราจีนบุรี</h3>
+            <p>มหาวิทยาลัยเทคโลโลยีพระจอมเกล้าพระนครเหนือ</p>
+            <p>ปราจีนบุรี ตำบลเนินหอม อำเภอ เมือง 25230</p>
+            <p>โทร 037-217-300</p>
+        </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
