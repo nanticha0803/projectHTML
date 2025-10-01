@@ -29,58 +29,153 @@
         <li><a href="settings.html">การตั้งค่าระบบ</a></li>
         <div class="login">
         <li><a href="../homepage.html">ออกจากระบบ</a></li>
-        </div>   
+        </div>     
     </div>
     
-    <main class="container">
-        <h2>การตั้งค่าระบบ</h2>
-        <form class="settings-form"> 
-            <section class="form-section">
-                <h3>ข้อมูลระบบ</h3>
-                <div class="form-group">
-                    <label for="systemName">ชื่อระบบ</label>
-                    <input type="text" id="systemName" value="ระบบจัดการโครงงานนักศึกษา">
-                </div>
-                <div class="form-group">
-                    <label for="academicYear">ปีการศึกษา</label>
-                    <input type="text" id="academicYear" value="2568">
-                </div>
-            </section>
-
-    
-            <section class="form-section">
-                <h3>เปลี่ยนรหัสผ่าน</h3>
-                <div class="highlight-label">
-                    <label for="currentPassword">รหัสผ่านปัจจุบัน</label>
-                    <input type="password" id="currentPassword">
-                 </div>
-                <div class="highlight-label">
-                    <label for="newPassword">รหัสผ่านใหม่</label>
-                    <input type="password" id="newPassword">
-                </div>
-                <div class="highlight-label">
-                    <label for="confirmPassword">ยืนยันรหัสผ่านใหม่</label>
-                    <input type="password" id="confirmPassword">
-                </div>
-            </section>
-
-            <section class="form-section">
-                <h3>การแสดงผล</h3>
-                <div class="form-group">
-                    <label for="theme">ธีม</label>
-                        <select id="theme">
-                            <option>สว่าง (Light)</option>
-                            <option>มืด (Dark)</option>
-                        </select>
-                </div>
-            </section>
-
-    
-            <div class="form-actions">
-                <button type="submit" class="savee-btn">บันทึกการเปลี่ยนแปลง</button>
+        <!-- ผู้ใช้ -->
+        <section>
+            <h2>การตั้งค่าผู้ใช้</h2>
+            <div class="form-group">
+                <label>สิทธิ์เริ่มต้น</label>
+                <select>
+                    <option>นักศึกษา</option>
+                    <option>อาจารย์</option>
+                    <option>ผู้ดูแลระบบ</option>
+                </select>
             </div>
-        </form>
-    </main>
+            <div class="form-group">
+                <label>การลงทะเบียน</label>
+                <select>
+                    <option>เปิด</option>
+                    <option>ปิด</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- โครงงาน -->
+        <section>
+            <h2>การตั้งค่าโครงงาน</h2>
+            <div class="form-group">
+                <label>ปีการศึกษา</label>
+                <input type="number" placeholder="ปีการศึกษา">
+            </div>
+            <div class="form-group">
+                <label>จำนวนโครงงานสูงสุดต่อคน</label>
+                <input type="number" placeholder="จำนวนโครงงานสูงสุดต่อคน">
+            </div>
+            <div class="form-group">
+                <label>สถานะการเปิดรับโครงงาน</label>
+                <select>
+                    <option>เปิด</option>
+                    <option>ปิด</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- การสอบ -->
+        <section>
+            <h2>การตั้งค่าการสอบ</h2>
+            <div class="form-group">
+                <label>วันที่สอบ</label>
+                <input type="date">
+            </div>
+            <div class="form-group">
+                <label>เวลาสอบ</label>
+                <input type="time">
+            </div>
+            <div class="form-group">
+                <label>รูปแบบการสอบ</label>
+                <select>
+                    <option>นำเสนอ(Presentation)</option>
+                    <option>สอบปากเปล่า(Oral Examination)</option>
+                    <option>ทั้งสองแบบ(Presentation + Oral Examination)</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- กรรมการ -->
+        <section>
+            <h2>การตั้งค่ากรรมการ</h2>
+            <div class="form-group">
+                <label>ชื่อกรรมการ</label>
+                <input type="text" placeholder="ชื่อ-สกุล">
+            </div>
+            <div class="form-group">
+                <label>ตำแหน่ง</label>
+                <select>
+                    <option>ประธานกรรมการ</option>
+                    <option>กรรมการร่วม</option>
+                    <option>เลขานุการ</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>สังกัด/คณะ</label>
+                <input type="text" placeholder="คณะ">
+            </div>
+            <div class="form-group">
+                <label>โครงงานที่รับผิดชอบ</label>
+                <input type="text" placeholder="โครงงานที่รับผิดชอบ">
+            </div>
+        </section>
+
+        <!-- อาจารย์ที่ปรึกษา -->
+        <section>
+            <h2>การตั้งค่าอาจารย์ที่ปรึกษา</h2>
+            <div class="form-group">
+                <label>ชื่ออาจารย์ที่ปรึกษา</label>
+                <input type="text" placeholder="ชื่อ-สกุล">
+            </div>
+            <div class="form-group">
+                <label>สังกัด/คณะ</label>
+                <input type="text" placeholder="คณะ">
+            </div>
+            <div class="form-group">
+                <label>จำนวนนักศึกษาที่รับผิดชอบ</label>
+                <input type="number" placeholder="จำนวนนักศึกษาที่รับผิดชอบ">
+            </div>
+        </section>
+
+        <!-- นักศึกษา -->
+        <section>
+            <h2>การตั้งค่านักศึกษา</h2>
+            <div class="form-group">
+                <label>ชื่อ-สกุล</label>
+                <input type="text" placeholder="ชื่อ-สกุล">
+            </div>
+            <div class="form-group">
+                <label>รหัสนักศึกษา</label>
+                <input type="text" placeholder="รหัสนักศึกษา">
+            </div>
+            <div class="form-group">
+                <label>ชั้นปี</label>
+                <input type="text" placeholder="ชั้นปี">
+            </div>
+            <div class="form-group">
+                <label>คณะ</label>
+                <input type="text" placeholder="คณะ">
+            </div>
+            <div class="form-group">
+                <label>สาขา</label>
+                <input type="text" placeholder="สาขา">
+            </div>
+
+            <h2>สถานะการลงทะเบียน</h2>
+            <div class="form-group">
+                <label>สถานะการลงทะเบียน</label>
+                <select>
+                    <option>ลงทะเบียนแล้ว</option>
+                    <option>ยังไม่ลงทะเบียน</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- ปุ่ม -->
+        <div class="btn-group">
+            <button class="btn btn-save">บันทึก</button>
+            <button class="btn btn-cancel">ยกเลิก</button>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-container">

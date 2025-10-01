@@ -341,7 +341,7 @@ textarea {
 .submit {
     background-color: #1976d2;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 40px;
     border: none;
     cursor: pointer;
     border-radius: 10px;
@@ -456,9 +456,6 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
-  background-color: #757575;
-}
 /*จบส่วนปุ่มยื่นคำร้องจบ*/
 
 /*กล่องความคิดเห็น*/
