@@ -304,7 +304,7 @@ footer{
 /*รายงานโครงงานที่ปรึกษา*/
 /*ส่วนอนุมัติ/ส่งกลับ/submit*/
 .approve {
-    background-color: #4caf50;
+    background-color: #4caf50;/*ปุ่มอนุมัติ*/
     color: white;
     padding: 5px 10px;
     border: none;
@@ -318,7 +318,7 @@ footer{
 }
 
 .reject {
-    background-color: #f44336;
+    background-color: #f44336;/*ปุ่มส่งกลับ*/
     color: white;
     padding: 5px 10px;
     border: none;
@@ -339,7 +339,7 @@ textarea {
 }
 
 .submit {
-    background-color: #1976d2;
+    background-color: #1976d2;/*ปุ่มกดส่งคำแนะนำ*/
     color: white;
     padding: 15px 40px;
     border: none;
@@ -363,12 +363,12 @@ textarea {
 
 .summary-cards {
   display: flex;
-  gap: 20px;
+  gap: 90px;
   flex-wrap: wrap;
 }
 
 .card {
-  background-color: #f7f7f7;
+  background-color: #f7f7f7;/*ช่องบอกส่วนจำนวนของโครงงาน*/
   border: 1px solid #ccc;
   padding: 20px;
   flex: 1;
@@ -378,11 +378,11 @@ textarea {
 }
 
 .card h3 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-/*ส่วนของจำนวนโครงงาน*/
+/*จบส่วนของจำนวนโครงงาน*/
 
-/*ส่วนของประกาศ*/
+/*ส่วนของประกาศแจ้งเตือน*/
 .student-list table,
 .notifications ul {
   margin-top: 15px;
@@ -394,12 +394,12 @@ textarea {
 }
 
 .notifications li {
-  margin-bottom: 10px;
+  margin-bottom: 10px;/*ส่วนของประกาศแจ้งเตือน*/
   background: #fff3cd;
   padding: 10px;
   border-left: 5px solid #ffc107;
 }
-/*จบส่วนของประกาศ*/
+/*จบส่วนของประกาศแจ้งเตือน*/
 /*จบหน้าTeacherHome*/
 
 /*ส่วนของรายละเอียดโครงงาน*/
