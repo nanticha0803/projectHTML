@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <div id="page">
     <header>
         <div class="left">
             <img src="../immge/kmutnb.jpg" alt="KMUTNB logo">
@@ -22,18 +21,31 @@
     </header>
     <div class="topnav">
         <li><a href="../homepage.html">หน้าหลัก</a></li>
-        <div class="login">
-        <li><a href="../login.html">เข้าสู่ระบบ</a></li>
         </div>    
     </div>
-
-        <div class="user-box"> 
-            <h2 class="title">เลือกประเภทผู้ใช้งาน</h2>
-            <a href="login.html" class="user-btn"> อาจารย์</a>
-            <a href="login1.html" class="user-btn">นักศึกษา</a>
-            <a href="login2.html" class="user-btn">กรรมการ</a>
+    <div class="content"> 
+    <div class="content-card">
+        <div class="login-card">
+            <form action="teacherHome.html" method="get">
+                <label for="Username">Username</label><br>
+                <input type="text" id="username"><br><br>
+                <label for="email">email</label><br>
+                <input type="email" id="email"><br><br>
+                <label for="Password">รหัส</label><br>
+                <input type="Password" id="Password"><br><br>
+                <label for="confirm_password">ยืนยันรหัสผ่าน</label><br>
+                <input type="confirm_password"><br><br>
+                <input type="submit" value="เข้าสู่ระบบ">
+            </form><br>
+            <div class="button">
+                <ul>
+                    <li><a href="student.html">เข้าสู่ระบบ</a><br><br></li>
+                    <li><a href="../user.html">ลงทะเบียนการสอบโครงการ</a></li>
+                </ul>
+            </div>
         </div>
-
+    </div>
+    </div>
     <footer>
         <div class="footer-container">
             <div class="footer-left">
@@ -51,6 +63,5 @@
         </div>
         </div>
     </footer>
-    </div>
 </body>
 </html>
