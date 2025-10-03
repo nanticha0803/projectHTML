@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/committee.css">
 </head>
 <body>
     <div id="page">
@@ -29,61 +30,69 @@
         </div>   
     </div>
 
-    <main class="container">
-    <h2>กำหนดการสอบจบโครงงาน</h2>
+      <main class="main-content">
+    <h2 class="page-title">บอร์ดสำหรับคณะกรรมการประเมินโครงงาน</h2>
 
-    <!-- ปุ่มเพิ่มการสอบ -->
-    <div class="actions">
-      <button class="add-btn">+ เพิ่มการสอบ</button>
+    <div class="summary-section">
+        <h3>สรุปงานที่ต้องดำเนินการ</h3>
+        <div class="card-container">
+            <div class="info-card" style="border-left-color: #FFA500;">
+                <h3>โครงงานที่ต้องประเมินวันนี้</h3>
+                <p>2 โครงงาน</p>
+            </div>
+
+            <div class="info-card" style="border-left-color: #28a745;">
+                <h3>ประเมินแล้ว (ทั้งหมด)</h3>
+                <p>15 โครงงาน</p>
+            </div>
+
+            <div class="info-card" style="border-left-color: #dc3545;">
+                <h3>รอส่งแก้ไข</h3>
+                <p>1 โครงงาน</p>
+            </div>
+        </div>
     </div>
 
-    <!-- ช่องค้นหา -->
-    <div class="search-box">
-      <input type="text" placeholder="ค้นหาชื่อโครงงานหรือนักศึกษา...">
-      <button class="search-btn">ค้นหา</button>
+    <div class="announcement-section">
+        <h3>ประกาศสำคัญ</h3>
+        <div class="announcement-box">
+            <h4>แจ้งเลื่อนวันสอบกลุ่ม 555</h4>
+            <p>เนื่องจากเหตุขัดข้องทางเทคนิค การสอบงานของกลุ่มที่ 555 (หัวข้อ NETWORK) จากเดิมวันที่ 22 ต.ค. จะเลื่อนไปเป็น **วันที่ 25 ต.ค. เวลา 13:00 น.** ขออภัยในความไม่สะดวก</p>
+            <span class="announcement-date">เผยแพร่: 20 ต.ค. 256X</span>
+        </div>
     </div>
 
-    <!-- ตารางการสอบ -->
-    <table class="exam-table">
-      <thead>
-        <tr>
-          <th>ลำดับ</th>
-          <th>ชื่อโครงงาน</th>
-          <th>นักศึกษา</th>
-          <th>วัน/เวลา</th>
-          <th>สถานที่</th>
-          <th>กรรมการสอบ</th>
-          <th>การจัดการ</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>ระบบ NETWORK</td>
-          <td>น.ส.นันทิชา ไชยขวัญดี</td>
-          <td>10 ต.ค. 2568<br>09:00 - 11:00</td>
-          <td>ห้อง 101 อาคารเรียนรวม</td>
-          <td>อ.ดร. B / อ.ดร. A</td>
-          <td>
-            <button class="edit-btn">แก้ไข</button>
-            <button class="delete-btn">ลบ</button>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>แอปพลิเคชัน</td>
-          <td>น.ส.นันทิชา ไชยขวัญดี</td>
-          <td>12 ต.ค. 2568<br>13:00 - 15:00</td>
-          <td>ห้อง 202 อาคารวิจัย</td>
-          <td>อ.ดร. A/ อ.ดร. B</td>
-          <td>
-            <button class="edit-btn">แก้ไข</button>
-            <button class="delete-btn">ลบ</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </main>
+    <div class="upcoming-section">
+        <h3>ตารางการสอบงานสัปดาห์นี้</h3>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>วัน/เวลา</th>
+                    <th>กลุ่มที่</th>
+                    <th>หัวข้อโครงงาน</th>
+                    <th>ห้องสอบ</th>
+                    <th>ดำเนินการ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>**จ. 23 ต.ค. 10:00 น.**</td>
+                    <td>111</td>
+                    <td>ระบบเครื่อข่าย</td>
+                    <td>พวงคราม</td>
+                    <td><a href="ContactStudent.html" class="action-btn">ประเมินทันที</a></td>
+                </tr>
+                 <tr>
+                    <td>**อ. 24 ต.ค. 14:00 น.**</td>
+                    <td>222</td>
+                    <td>แอปพลิเคชัน</td>
+                    <td>พวงแสด</td>
+                    <td><button class="action-btn" style="background-color: #FFC107;" disabled>ยังไม่ถึงเวลา</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
                                            
     <footer>
         <div class="footer-container">

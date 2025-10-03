@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/committee.css">
+</head>
+<body>
+    <div id="page">
+    <header>
+        <div class="left">
+            <img src="../immge/kmutnb.jpg" alt="KMUTNB logo">
+            <div class="title">
+                <h1>ระบบจัดการโครงการนักศึกษา</h1>
+                <p>Student Project Management System-Presentation Mockup</p>
+            </div>
+        </div>
+        <div class="right">
+            ภาคเรียนที่ 1 ปีการศึกษา 2568
+        </div>
+    </header>
+    <div class="topnav">
+            <li><a href="homepage.html">หน้าหลัก</a></li>
+            <li><a href="exams.html">การสอบงาน</a></li>
+            <li><a href="topics.html">หัวข้อการสอบ</a></li>
+            <div class="login">
+            <li><a href="../homepage.html">ออกจากระบบ</a></li>
+            </div>   
+        </div>
+
+            <main class="main-content">
+                <h2 class="page-title">ตารางการสอบงานและประเมินผล</h2>
+
+                <div class="control-panel">
+                    <input type="text" placeholder="ค้นหาชื่อโครงงานหรือกลุ่ม..." class="search-input">
+                    <select class="filter-select">
+                        <option value="all">สถานะทั้งหมด</option>
+                        <option value="pending">รอประเมิน</option>
+                        <option value="evaluated">ประเมินแล้ว</option>
+                        <option value="resubmit">รอส่งแก้ไข</option>
+                    </select>
+                    <button class="export-btn" style="background-color:#2ecc71;">ส่งออกข้อมูล</button>
+                </div>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>กลุ่มที่</th>
+                            <th>หัวข้อโครงงาน</th>
+                            <th>วัน/เวลาสอบ</th>
+                            <th>ห้องสอบ</th>
+                            <th>สถานะ</th>
+                            <th>ดำเนินการ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td>ระบบจองห้องประชุมออนไลน์</td>
+                            <td>18 ต.ค. 2568, 10:00</td>
+                            <td>SCB 301</td>
+                            <td><span class="status-tag status-evaluated">ประเมินแล้ว</span></td>
+                            <td><a href="#" class="action-btn view-btn">ดูผล</a></td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>แอปพลิเคชันแนะนำสถานที่ท่องเที่ยว</td>
+                            <td>20 ต.ค. 2568, 14:00</td>
+                            <td>SCB 301</td>
+                            <td><span class="status-tag status-pending">รอประเมิน</span></td>
+                            <td><a href="#" class="action-btn evaluate-btn">ประเมิน</a></td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>ระบบจัดการคลังสินค้าอัจฉริยะ</td>
+                            <td>21 ต.ค. 2568, 09:00</td>
+                            <td>SCB 302</td>
+                            <td><span class="status-tag status-resubmit">รอส่งแก้ไข</span></td>
+                            <td><a href="#" class="action-btn resubmit-btn">แก้ไข/อนุมัติ</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+        <h3>อื่นๆ</h3>
+        <ul>
+            <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1y7vnPRgfEhYKhXQVbHxwsdwM1kdxrpRc%2Fview%3Fusp%3Dsharing&h=AT25me3oUQqxi9kQCxX723da5SBsMU1qLoboOF0MvWpid5MX52f6VdV5v-VOSPSlpVg5EVGWXq1_64Xk5VHzoolRpxXp72QIjt1g5WW40QYoexaRIpDLNfTcZXRxVuRxIP4BPuu4AQGm6CdcAUkDDjXAqPFhnFmK&__tn__=-UK-R&c[0]=AT3jlIObfIGGfA3A1uBpUL9n6qO4dfWgmYJJGgrRZIVycCSb6PFWXJZquHACZHZ_xN76WsmucF2PlLvqiHFimAsaI0_X6tBO6fKDu2IofnuPZh18OnkwdcR1jJolVD-XeeUT14CjoUyNW5YnwDRkDHma8PINo7loERYWuIHmM55c4wUAAMAKe-ZaM-3QYr4">ตารางสอบ</a></li>
+            <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1KU2qisg69m7mp3FwvtxrbTMmTbRrFdX_%3Fusp%3Ddrive_link&h=AT3XYAvYiVkW2-9SV7d4Wmsa3nmCkm_zIKGf27iGDHTfINFL9bAoGEID-Rav28gQLfcZCVVW1GfgNA-xNJzMBCzmkcAcDodnrK3jdiVZ2JpGjAs_no-WSH-b2FDAVVXIWPn8gqgz5Bi99y6MW23T6I2y56o2pK3g&__tn__=-UK-R&c[0]=AT3jlIObfIGGfA3A1uBpUL9n6qO4dfWgmYJJGgrRZIVycCSb6PFWXJZquHACZHZ_xN76WsmucF2PlLvqiHFimAsaI0_X6tBO6fKDu2IofnuPZh18OnkwdcR1jJolVD-XeeUT14CjoUyNW5YnwDRkDHma8PINo7loERYWuIHmM55c4wUAAMAKe-ZaM-3QYr4">ตรวจสอบรายชื่อสอบ</a></li>
+        </ul>
+        </div>
+        <div class="footer-right">
+            <h3>ติดต่อ มจพ. ปราจีนบุรี</h3>
+            <p>มหาวิทยาลัยเทคโลโลยีพระจอมเกล้าพระนครเหนือ</p>
+            <p>ปราจีนบุรี ตำบลเนินหอม อำเภอ เมือง 25230</p>
+            <p>โทร 037-217-300</p>
+        </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

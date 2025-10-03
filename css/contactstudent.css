@@ -1,0 +1,127 @@
+/*หน้าติดตามสถานะโครงงานนักศึกษา*/
+/* Block หลักที่แสดงรายละเอียดทั้งหมด */
+.project-detail-block {
+    background-color: #ffffff;         /* พื้นหลังของกล่องเป็นสีขาว */
+    border: 1px solid #ddd;            /* สร้างเส้นขอบบาง 1px สีเทาอ่อน */
+    border-radius: 6px;                /* ทำให้มุมโค้งมน 6 พิกเซล */
+    padding: 30px;                     /* เว้นช่องว่างภายใน 30 พิกเซล */
+    margin-top: 25px;                  /* เว้นช่องว่างด้านบน 25 พิกเซล */
+    width: 100%;
+    border-left: 8px solid #007bff;    /****สร้างเส้นเน้นหนา 8px สีน้ำเงินที่ขอบซ้าย****/
+}
+
+/* Header ของ Block (ชื่อโครงการและเปอร์เซ็นต์) */
+.block-header-simple {
+    display: flex;                     /* ใช้ Flexbox จัดเรียงรายการในแนวนอน */
+    justify-content: space-between;    /* จัดให้หัวข้ออยู่ซ้ายสุด และเปอร์เซ็นต์อยู่ขวาสุด */
+    align-items: center;               /* จัดองค์ประกอบให้อยู่กึ่งกลางแนวตั้ง */
+    border-bottom: 1px solid #eee;     /* สร้างเส้นแบ่ง 1px สีเทาอ่อนใต้ส่วนหัว */
+    padding-bottom: 15px;              /* เว้นช่องว่างใต้เส้นแบ่ง 15 พิกเซล */
+    margin-bottom: 20px;               /* เว้นช่องว่างด้านล่างส่วนหัว 20 พิกเซล */
+}
+
+.project-title-simple {
+    margin: 0;                         /* ลบช่องว่างรอบชื่อหัวข้อออก */
+    font-size: 1.4em;                  /* ขนาดตัวอักษร 1.4 เท่า */
+    color: #007bff;                    /****สีหัวข้อเป็นสีน้ำเงิน*****/
+}
+
+.progress-percent-simple {
+    font-size: 2em;                    /* ขนาดตัวอักษร 2 เท่า (ให้ตัวเลขเปอร์เซ็นต์ดูเด่น) */
+    font-weight: bold;                 /* ตัวอักษรหนา */
+    color: #28a745;                    /****สีเขียว (สื่อถึงสถานะที่ดี) ตรงเลข 85% ****/
+}
+
+/* แถวข้อมูลทั่วไป (สมาชิก, ความคืบหน้า) */
+.info-row {
+    display: flex;                     /* ใช้ Flexbox จัดเรียง Label และ Value ในแนวนอน */
+    align-items: center;               /* จัดองค์ประกอบให้อยู่กึ่งกลางแนวตั้ง */
+    margin-bottom: 10px;               /* เว้นช่องว่างด้านล่าง 10 พิกเซล */
+}
+
+.info-label {
+    font-weight: bold;                 /* ตัวอักษรหนา */
+    color: #666;                       /* สีเทาเข้มสำหรับ Label */
+    min-width: 150px;                  /* กำหนดความกว้างขั้นต่ำ 150px เพื่อให้ข้อมูลตรงกัน */
+    font-size: 0.95em;                 /* ขนาดตัวอักษรเล็กกว่าปกติเล็กน้อย */
+}
+
+/* ส่วนแถบความคืบหน้า (Progress Bar) */
+.progress-row {
+    margin-top: 15px;                  /* เว้นช่องว่างด้านบน 15 พิกเซล */
+    margin-bottom: 20px;               /* เว้นช่องว่างด้านล่าง 20 พิกเซล */
+}
+
+.full-width-bar {
+    flex-grow: 1;                      /* อนุญาตให้แถบ Bar ยืดเต็มพื้นที่ที่เหลือในแถว */
+    max-width: 500px;                  /* จำกัดความกว้างสูงสุดของแถบ Bar ไม่เกิน 500 พิกเซล */
+}
+
+.progress-bar-container-simple {
+    height: 10px;                      /***ความสูงของกรอบแถบความคืบหน้า***/
+    background-color: #eee;            /*** สีพื้นหลังของแถบ ที่เหลือต่อจากส้ม(สีเทาอ่อน)****/
+    border-radius: 5px;                /* ทำให้มุมโค้งมน */
+    overflow: hidden;                  /* ซ่อนส่วนที่เกินขอบเขต */
+}
+
+.progress-bar-simple {
+    height: 100%;                      /* ความสูงเต็มกรอบ */
+    background-color: #FFA500;         /****สีความคืบหน้า ของโครงงาน****/
+    border-radius: 5px;                /* ทำให้มุมโค้งมน */
+}
+
+/* สรุปคะแนนและสถานะ (จัดเรียงเป็น 3 คอลัมน์ด้านล่าง) */
+.summary-row {
+    display: flex;                     /* ใช้ Flexbox จัดรายการสรุปในแนวนอน */
+    justify-content: space-between;    /* จัดให้มีช่องว่างเท่ากันระหว่างรายการ */
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;        /* สร้างเส้นแบ่ง 1px สีเทาอ่อนด้านบน */
+}
+
+.summary-item {
+    flex-basis: 32%;                   /* กำหนดให้แต่ละรายการกินพื้นที่ประมาณ 32% */
+    text-align: center;                /* จัดข้อความให้อยู่กึ่งกลาง */
+}
+
+.score-label-simple, .status-label-simple {
+    display: block;                    /* ทำให้ Label (ป้ายกำกับ) อยู่คนละบรรทัดกับ Value */
+    color: #888;                       /* สีเทาอ่อนสำหรับ คะแนนรวม สถานะการประเมิน วันสอบถัดไป */
+    font-size: 0.85em;
+    margin-bottom: 5px;
+}
+
+.score-value-simple, .status-text-simple {
+    font-size: 1.2em;                  /* ขนาดตัวอักษร 1.2 เท่า */
+    font-weight: bold;                 /* ตัวอักษรหนา */
+    color: #333;                       /*สีของ 82/100 คะแนน สถานะการประเมิน */
+}
+
+/* ปุ่มดำเนินการด้านล่าง */
+.action-footer {
+    display: flex;                     /* ใช้ Flexbox จัดปุ่มให้อยู่ในแนวนอน */
+    gap: 10px;                         /* เว้นช่องว่างระหว่างปุ่ม 10 พิกเซล */
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px dashed #db2929;       /* สร้างเส้นประแบ่งส่วนด้านบน */
+}
+
+.view-detail-btn-simple {
+    border: none;                      /* ลบเส้นขอบของปุ่มออก */
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.95em;
+    cursor: pointer;                   /* เปลี่ยนเมาส์เป็นรูปนิ้วชี้เมื่อชี้ที่ปุ่ม */
+}
+
+.primary-btn {
+    background-color: #FFA500;         /****พื้นหลังสีส้ม (ปุ่มหลัก)****/
+    color: white;                      /* ตัวอักษรสีขาว */
+}
+
+.secondary-btn {
+    background-color: #6c757d;         /****พื้นหลังสีเทาเข้ม (ปุ่มรอง)*** */
+    color: white;                      /* ตัวอักษรสีขาว */
+}
+/*หน้าติดตามสถานะโครงงานนักศึกษา*/

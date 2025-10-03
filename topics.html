@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/committee.css">
+</head>
+<body>
+    <div id="page">
+    <header>
+        <div class="left">
+            <img src="../immge/kmutnb.jpg" alt="KMUTNB logo">
+            <div class="title">
+                <h1>ระบบจัดการโครงการนักศึกษา</h1>
+                <p>Student Project Management System-Presentation Mockup</p>
+            </div>
+        </div>
+        <div class="right">
+            ภาคเรียนที่ 1 ปีการศึกษา 2568
+        </div>
+    </header>
+    <div class="topnav">
+        <li><a href="homepage.html">หน้าหลัก</a></li>
+        <li><a href="exams.html">การสอบงาน</a></li>
+        <li><a href="topics.html">หัวข้อการสอบ</a></li>
+        <div class="login">
+        <li><a href="../homepage.html">ออกจากระบบ</a></li>
+        </div>   
+    </div>
+
+            <main class="main-content">
+            <h2 class="page-title">คู่มือและเกณฑ์การประเมินโครงงานนักศึกษา</h2>
+            <p>คู่มือนี้ใช้เป็นมาตรฐานในการให้คะแนนโครงงาน โดยแบ่งเกณฑ์ออกเป็น 3 ส่วนหลัก (รวม 100 คะแนน) และคณะกรรมการต้องใช้เกณฑ์นี้ในการให้คะแนนทุกกลุ่ม</p>
+
+            <div class="topic-list">
+        
+                <div class="topic-item">
+                    <h3>1. เกณฑ์ด้านเอกสารและเนื้อหา (40 คะแนน)</h3>
+                    <p>ประเมินความสมบูรณ์และคุณภาพของรายงานโครงงานฉบับเต็ม</p>
+                    <ul>
+                        <li><strong>1.1 ความชัดเจนของปัญหาและวัตถุประสงค์ (10 คะแนน):</strong> ระบุปัญหาที่ชัดเจนและวัตถุประสงค์ที่วัดผลได้จริง</li>
+                        <li><strong>1.2 การวิเคราะห์และออกแบบระบบ (15 คะแนน):</strong> ความเหมาะสมของเครื่องมือ/เทคโนโลยีที่เลือกใช้ และความถูกต้องตามหลักการวิเคราะห์ (เช่น ER Diagram, Flowchart)</li>
+                        <li><strong>1.3 การอ้างอิงและบรรณานุกรม (5 คะแนน):</strong> การอ้างอิงแหล่งข้อมูลที่ถูกต้องตามรูปแบบที่กำหนด</li>
+                        <li><strong>1.4 สรุปผลและข้อเสนอแนะ (10 คะแนน):</strong> สรุปที่ตรงประเด็นและข้อเสนอแนะสำหรับการพัฒนาต่อยอด</li>
+                    </ul>
+                </div>
+
+                <div class="topic-item">
+                    <h3>2. เกณฑ์ด้านการนำเสนอและการตอบคำถาม (30 คะแนน)</h3>
+                    <p>ประเมินทักษะการสื่อสาร ความรู้ในหัวข้อโครงงาน และการรับมือกับคำถาม</p>
+                    <ul>
+                        <li><strong>2.1 ความชัดเจนและน่าสนใจในการนำเสนอ (10 คะแนน):</strong> การสื่อสารที่มีประสิทธิภาพและการจัดทำสไลด์ประกอบ</li>
+                        <li><strong>2.2 การบริหารเวลาในการนำเสนอ (5 คะแนน):</strong> การนำเสนอภายในกรอบเวลาที่กำหนด (เช่น 15 นาที)</li>
+                        <li><strong>2.3 ความสามารถในการตอบคำถาม (15 คะแนน):</strong> ความถูกต้อง ความเข้าใจ และความมั่นใจในการชี้แจงคำถามของคณะกรรมการ</li>
+                    </ul>
+                </div>
+
+                <div class="topic-item">
+                    <h3>3. เกณฑ์ด้านผลิตภัณฑ์ (Product) และการสาธิต (30 คะแนน)</h3>
+                    <p>ประเมินคุณภาพของผลงานที่พัฒนาขึ้นและการทำงานตามที่ระบุในวัตถุประสงค์</p>
+                    <ul>
+                        <li><strong>3.1 ความสมบูรณ์ของฟังก์ชันการทำงาน (15 คะแนน):</strong> ระบบทำงานได้ครบถ้วนตามวัตถุประสงค์หรือไม่ มีข้อผิดพลาด (Bugs) ร้ายแรงหรือไม่</li>
+                        <li><strong>3.2 การออกแบบส่วนติดต่อผู้ใช้ (UI/UX) (10 คะแนน):</strong> ความสวยงาม ใช้งานง่าย และเหมาะสมกับกลุ่มเป้าหมาย</li>
+                        <li><strong>3.3 คุณภาพของโค้ด/ฐานข้อมูล (5 คะแนน):</strong> (ประเมินจากการตรวจสอบเบื้องต้น) ความสะอาดและการจัดระเบียบของโค้ด/ฐานข้อมูล</li>
+                    </ul>
+                </div>
+        
+            </div>
+
+            <div class="download-link">
+                <p>หากต้องการดูรายละเอียดเกณฑ์การให้คะแนนอย่างละเอียด สามารถดาวน์โหลดเอกสารฉบับเต็มได้ที่นี่:</p>
+                <a href="" class="download-btn" target="_blank">ดาวน์โหลด เกณฑ์การประเมินฉบับเต็ม (PDF)</a>
+            </div>
+        </main>   
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+        <h3>อื่นๆ</h3>
+        <ul>
+            <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1y7vnPRgfEhYKhXQVbHxwsdwM1kdxrpRc%2Fview%3Fusp%3Dsharing&h=AT25me3oUQqxi9kQCxX723da5SBsMU1qLoboOF0MvWpid5MX52f6VdV5v-VOSPSlpVg5EVGWXq1_64Xk5VHzoolRpxXp72QIjt1g5WW40QYoexaRIpDLNfTcZXRxVuRxIP4BPuu4AQGm6CdcAUkDDjXAqPFhnFmK&__tn__=-UK-R&c[0]=AT3jlIObfIGGfA3A1uBpUL9n6qO4dfWgmYJJGgrRZIVycCSb6PFWXJZquHACZHZ_xN76WsmucF2PlLvqiHFimAsaI0_X6tBO6fKDu2IofnuPZh18OnkwdcR1jJolVD-XeeUT14CjoUyNW5YnwDRkDHma8PINo7loERYWuIHmM55c4wUAAMAKe-ZaM-3QYr4">ตารางสอบ</a></li>
+            <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1KU2qisg69m7mp3FwvtxrbTMmTbRrFdX_%3Fusp%3Ddrive_link&h=AT3XYAvYiVkW2-9SV7d4Wmsa3nmCkm_zIKGf27iGDHTfINFL9bAoGEID-Rav28gQLfcZCVVW1GfgNA-xNJzMBCzmkcAcDodnrK3jdiVZ2JpGjAs_no-WSH-b2FDAVVXIWPn8gqgz5Bi99y6MW23T6I2y56o2pK3g&__tn__=-UK-R&c[0]=AT3jlIObfIGGfA3A1uBpUL9n6qO4dfWgmYJJGgrRZIVycCSb6PFWXJZquHACZHZ_xN76WsmucF2PlLvqiHFimAsaI0_X6tBO6fKDu2IofnuPZh18OnkwdcR1jJolVD-XeeUT14CjoUyNW5YnwDRkDHma8PINo7loERYWuIHmM55c4wUAAMAKe-ZaM-3QYr4">ตรวจสอบรายชื่อสอบ</a></li>
+        </ul>
+        </div>
+        <div class="footer-right">
+            <h3>ติดต่อ มจพ. ปราจีนบุรี</h3>
+            <p>มหาวิทยาลัยเทคโลโลยีพระจอมเกล้าพระนครเหนือ</p>
+            <p>ปราจีนบุรี ตำบลเนินหอม อำเภอ เมือง 25230</p>
+            <p>โทร 037-217-300</p>
+        </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

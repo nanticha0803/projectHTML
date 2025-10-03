@@ -1,0 +1,141 @@
+/* CSS ส่วนเฉพาะ: หน้าหลัก (Home) */
+/* CSS สำหรับ Card แสดงข้อมูลสำคัญ (Info Cards) */
+.card-container {
+    display: flex; /* จัดเรียง Card ในแนวนอน */
+    gap: 20px; /* เว้นช่องว่างระหว่าง Card */
+    margin-top: 20px;
+}
+
+.info-card {
+    background-color: #fff; /* พื้นหลังสีขาว */
+    border: 1px solid #ddd; /* ขอบสีเทาอ่อน */
+    border-left: 5px solid #FFA500; /* เน้นด้วยเส้นสีส้ม */
+    padding: 25px;
+    border-radius: 6px; /* มุมโค้งมน */
+    flex: 1; /* ทำให้ Card ยืดเต็มพื้นที่และมีขนาดเท่ากัน */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* เงาเล็กน้อย */
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.info-card h3 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+.info-card p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff; /* สีน้ำเงินสำหรับตัวเลขสำคัญ */
+    margin-bottom: 0;
+}
+/* CSS สำหรับ Card แสดงข้อมูลสำคัญ (Info Cards) */
+
+/* CSS เพิ่มเติม: ส่วนสรุปงานที่ต้องทำ (Summary Section) */
+.summary-section h3, .announcement-section h3, .upcoming-section h3 {
+    color: #444;
+    margin-top: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* ปรับสีเส้นเน้น Card ให้หลากหลายขึ้นตามสถานะ */
+/* (ไม่ต้องเพิ่มถ้าคุณใช้การกำหนด style ใน HTML แล้ว)
+.info-card[style*="FFA500"] { border-left-color: #FFA500; }
+.info-card[style*="28a745"] { border-left-color: #28a745; }
+.info-card[style*="dc3545"] { border-left-color: #dc3545; }
+*/
+
+/* CSS สำหรับส่วนประกาศ (Announcement Section) */
+.announcement-box {
+    background-color: #fff0f5; /* สีชมพูอ่อนเพื่อให้ประกาศดูเด่น */
+    border: 1px solid #570d20;/*เส้นขอบ*/
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.announcement-box h4 {
+    color: #8b0000; /* สีแดงเข้มสำหรับหัวข้อประกาศ */
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.announcement-date {
+    display: block;
+    font-size: 0.8em;
+    color: #9a0303;
+    text-align: right;
+}
+
+.action-btn {
+border-radius: 8px
+}
+/* จบ CSS ส่วนเฉพาะ: หน้าหลัก (Home) */
+
+/*ส่วนหน้าของหัวข้อการสอบงาน*/
+/* CSS ส่วนเพิ่มเติม: หน้าหัวข้อการสอบ (Topics) */
+/* CSS ส่วนเพิ่มเติม: หน้าหัวข้อการสอบ (Topics) */
+
+.topic-list {
+    /* ใช้การจัดเรียงแบบคอลัมน์เหมือนเดิม แต่เพิ่มพื้นที่ห่างมากขึ้น */
+    display: flex;             /* จัดองค์ประกอบภายในให้เรียงกัน (Flexbox) */
+    flex-direction: column;    /* กำหนดให้องค์ประกอบย่อยเรียงเป็นแนวตั้ง (คอลัมน์) */
+    gap: 25px;                 /* เว้นช่องว่าง 25 พิกเซล ระหว่าง Topic Item แต่ละอัน */
+    margin-top: 20px;          /* กำหนดระยะห่างด้านบน 20 พิกเซล */
+}
+
+.topic-item {
+    /* ใช้สีที่สื่อถึง 'กฎ/มาตรฐาน' เช่น สีเขียวเข้ม/น้ำเงิน */
+    border-left: 5px solid #e17b28; /* สร้างเส้นหนาที่ขอบซ้าย */
+    background-color: #f4eae0; /* กำหนดพื้นหลัง */
+    padding: 20px;            
+    border-radius: 6px;       
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* เพิ่มเงาเล็กน้อยให้กับกล่อง (Card) */
+}
+
+.topic-item h3 {
+    color: #0a0a0a;           /* สีดำเข้มสำหรับหัวข้อ */
+    border-bottom: 1px solid #cfc9c9; /* สร้างเส้นแบ่ง 1px สีเทาอ่อน (#ddd) ใต้หัวข้อ */
+    padding-bottom: 8px;       /* เว้นช่องว่างใต้เส้นแบ่ง 8 พิกเซล */
+    margin-top: 0;             /* ลบช่องว่างด้านบนของหัวข้อออก */
+    font-size: 1.4em;          /* กำหนดขนาดตัวอักษรของหัวข้อเป็น 1.4 เท่าของขนาดปกติ */
+}
+
+.topic-item ul {
+    list-style-type: none;     /* ลบจุดนำหน้า (Bullet Point) เริ่มต้นของรายการออก */
+    padding-left: 0;           /* ลบระยะเยื้องด้านซ้ายของรายการออก */
+}
+
+.topic-item ul li {
+    margin-bottom: 10px;       /* เว้นช่องว่างด้านล่างให้แต่ละรายการย่อย */
+    line-height: 1.6;          /* กำหนดระยะห่างระหว่างบรรทัด(อ่านง่ายขึ้น) */
+    border-left: 3px solid #ccc; /* สร้างเส้นเน้น 3px สีเทาอ่อน ที่ขอบซ้ายของแต่ละรายการย่อย */
+    padding-left: 10px;        /* เว้นช่องว่าง 10 พิกเซล ระหว่างเส้นเน้นกับข้อความ */
+}
+
+/* สไตล์สำหรับปุ่มดาวน์โหลดเอกสาร */
+.download-link {
+    margin-top: 40px;          /* เว้นช่องว่างด้านบน 40 พิกเซล */
+    padding: 20px;             /* เว้นช่องว่างภายใน 20 พิกเซล */
+    background-color: #e9ecef; /* กำหนดพื้นหลังเป็นสีเทาอ่อนมาก */
+    border-radius: 5px;        /* ทำให้มุมโค้งมน 5 พิกเซล */
+    text-align: center;        /* จัดข้อความภายในให้อยู่กึ่งกลาง */
+}
+
+.download-btn {
+    background-color: #FFA500; /* กำหนดพื้นหลังปุ่มเป็นสีส้มหลักของระบบ */
+    color: white;              /* กำหนดสีตัวอักษรเป็นสีขาว */
+    text-decoration: none;     /* ลบขีดเส้นใต้ของลิงก์ออก */
+    padding: 12px 25px;        /* เว้นช่องว่างภายในปุ่ม (บน/ล่าง 12px, ซ้าย/ขวา 25px) */
+    border-radius: 5px;        /* ทำให้มุมโค้งมน 5 พิกเซล */
+    font-weight: bold;         /* ทำให้ตัวอักษรเป็นตัวหนา */
+    display: inline-block;     /* กำหนดให้เป็นองค์ประกอบแบบบล็อกที่จัดเรียงแบบอินไลน์ได้ */
+    margin-top: 10px;          /* เว้นช่องว่างด้านบน 10 พิกเซล */
+    transition: background-color 0.3s; /* กำหนดให้การเปลี่ยนสีพื้นหลังมีความนุ่มนวล 0.3 วินาที */
+}
+
+.download-btn:hover {
+    background-color: #cc8400; /* เมื่อเมาส์ชี้ (Hover) ให้เปลี่ยนพื้นหลังเป็นสีส้มเข้มขึ้น */
+}
