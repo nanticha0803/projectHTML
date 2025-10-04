@@ -276,8 +276,6 @@ footer{
 }
 /* จบส่วนfooter */
 
-
-
 /*หน้า user*/
 .user-box {
     text-align: center;
@@ -301,125 +299,219 @@ footer{
 }
 /* จบส่วน user */
 
-/*รายงานโครงงานที่ปรึกษา*/
-/*ส่วนอนุมัติ/ส่งกลับ/submit*/
-.approve {
-    background-color: #4caf50;/*ปุ่มอนุมัติ*/
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    text-decoration: none;
+/***********************รายงานโครงงานที่ปรึกษา*************************************/
+h2 {
+    font-size: 1.6em; /* ขนาดตัวอักษรหัวข้อหน้า */
+    margin-bottom: 20px; /* ระยะห่างด้านล่างหัวข้อ */
+    color: #333; /* สีหัวข้อ */
 }
 
-.approve:hover{
-    background-color: #4caf50;
+/* ส่วนควบคุมและตัวกรอง */
+.controls-area {
+    display: flex; /* ใช้ Flexbox สำหรับจัดเรียงช่องค้นหา, ตัวกรอง, และปุ่ม */
+    gap: 10px; /* ระยะห่างระหว่างองค์ประกอบ */
+    margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+    flex-wrap: wrap; /* ให้ขึ้นบรรทัดใหม่เมื่อหน้าจอแคบ */
 }
 
-.reject {
-    background-color: #f44336;/*ปุ่มส่งกลับ*/
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    text-decoration: none;
+.search-input, .filter-select {
+    padding: 10px; /* ระยะห่างภายใน */
+    border: 1px solid #ccc; /* ขอบสีเทาอ่อน */
+    border-radius: 4px; /* มุมโค้งมน */
+    font-family: 'Sarabun', sans-serif; /* ใช้ฟอนต์ Sarabun */
 }
 
-.reject:hover{
-    background-color: #f44336;
+.search-input {
+    flex-grow: 1; /* ให้ช่องค้นหามีความกว้างมากที่สุด */
+    min-width: 250px; /* ความกว้างต่ำสุด */
 }
 
-textarea {
+.export-button {
+    background-color: #007bff; /* สีน้ำเงินสำหรับปุ่ม Export */
+    color: white; /* สีข้อความขาว */
+    padding: 10px 15px; /* ระยะห่างภายใน */
+    border: none; /* ลบเส้นขอบ */
+    border-radius: 4px; /* มุมโค้งมน */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นรูปมือเมื่อชี้ */
+    transition: background-color 0.2s; /* เอฟเฟกต์การเปลี่ยนสี */
+}
+
+.export-button:hover {
+    background-color: #0056b3; /* สีเข้มขึ้นเมื่อเมาส์ชี้ */
+}
+
+/* ตาราง */
+.table-responsive {
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+
+.project-table {
     width: 100%;
-    height: 100px;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+.project-table th,.project-table td {
+    border: 1px solid #ddd;
     padding: 10px;
-    font-size: 16px;
+    text-align: left;
+    font-size: 0.95em;
+}
+.project-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
 }
 
-.submit {
-    background-color: #1976d2;/*ปุ่มกดส่งคำแนะนำ*/
-    color: white;
-    padding: 15px 40px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
+/* สถานะ (Status Badges) */
+.status {
+    padding: 4px 8px; /* ระยะห่างภายใน */
+    border-radius: 4px; /* มุมโค้งมน */
+    font-weight: 600; /* ตัวหนา */
+    font-size: 0.9em; /* ขนาดตัวอักษรเล็กลงเล็กน้อย */
 }
 
-.submit:hover{
-    background-color: #1976d2;
+.status-pending {
+    background-color: #ffc107; /* สีเหลือง/ส้ม */
+    color: white; /* สีข้อความเข้ม */
 }
 
+.status-approved {
+    background-color: #28a745; /* สีเขียว */
+    color: white; /* สีข้อความขาว */
+}
 
-/*จบส่วนอนุมัติ/ส่งกลับ/submit*/
-/*จบรายงานโครงงานที่ปรึกษา*/
+.status-rework {
+    background-color: #dc3545; /* สีแดง */
+    color: white; /* สีข้อความขาว */
+}
 
-/*หน้าTeacherHome*/
+/* ปุ่มการดำเนินการในตาราง */
+.action-btn {
+    padding: 6px 10px; /* ระยะห่างภายใน */
+    background-color: #007bff; /* พื้นหลังสีน้ำเงิน */
+    color: white; /* ข้อความสีขาว */
+    border-radius: 4px; /* มุมโค้งมน */
+    cursor: pointer; /* เคอร์เซอร์มือ */
+    transition: background-color 0.2s;
+    text-decoration: none;
+}
+
+.action-btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/******************จบรายงานโครงงานที่ปรึกษา*********************/
+
+
+/********************************หน้าTeacherHome*****************************/
 /*ส่วนของจำนวนโครงงาน*/
+.content-container {
+    padding: 0px;
+    background-color: white;              /* พื้นหลังส่วนเนื้อหาสีขาว */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-summary h3, .section-heading-lg h2 {
+    color: #444;
+    margin-top: 30px;
+    border-bottom: 1px solid #eee; /* เส้นแบ่งใต้หัวข้อ */
+    padding-bottom: 5px;
+}
+
+.section-heading-lg {
+    color: #333;                          /* หัวข้อหลักสีดำเข้ม */
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* สไตล์สำหรับ Dashboard Summary (สรุปภาพรวม) */
 .dashboard-summary {
-  margin-bottom: 30px;
+    display: flex;                        /* จัดเรียงกล่องสรุปข้อมูลแนวนอน */
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
-.summary-cards {
-  display: flex;
-  gap: 90px;
-  flex-wrap: wrap;
+.card-container {
+    display: flex; /* จัดเรียง Card ในแนวนอน */
+    gap: 20px; /* เว้นช่องว่างระหว่าง Card */
+    margin-top: 20px;
 }
 
-.card {
-  background-color: #f7f7f7;/*ช่องบอกส่วนจำนวนของโครงงาน*/
-  border: 1px solid #ccc;
-  padding: 20px;
-  flex: 1;
-  min-width: 200px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.info-card {
+    background-color: #fff; /* พื้นหลังสีขาว */
+    border: 1px solid #ddd; /* ขอบสีเทาอ่อน */
+    border-left: 5px solid #FFA500; /* เน้นด้วยเส้นสีส้ม */
+    padding: 25px;
+    border-radius: 6px; /* มุมโค้งมน */
+    flex: 1; /* ทำให้ Card ยืดเต็มพื้นที่และมีขนาดเท่ากัน */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* เงาเล็กน้อย */
+    transition: transform 0.3s;
+    cursor: pointer;
 }
 
-.card h3 {
-  margin-bottom: 20px;
-}
-/*จบส่วนของจำนวนโครงงาน*/
-
-/*ส่วนของประกาศแจ้งเตือน*/
-.student-list table,
-.notifications ul {
-  margin-top: 15px;
+.info-card h3 {
+    color: #333;/* สีเทาเข้มสำหรับหัวข้อ */
+    margin-top: 0;
+    font-size: 1.3em;
 }
 
-.notifications ul {
-  list-style: none;
-  padding-left: 0;
+.info-card p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff; /* สีน้ำเงินสำหรับตัวเลขสำคัญ */
+    margin-bottom: 0;
+}
+/* จบสไตล์สำหรับ Dashboard Summary (สรุปภาพรวม) */
+
+/* สไตล์สำหรับตารางนักศึกษาที่ดูแลล่าสุด */
+.table-responsive {
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+.recent-students-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+.recent-students-table th, .recent-students-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 0.95em;
+}
+.recent-students-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+/* สไตล์สำหรับตารางนักศึกษาที่ดูแลล่าสุด */
+
+/* สไตล์สำหรับส่วนประกาศ / แจ้งเตือน */
+.alert-list {
+    margin-top: 10px;
 }
 
-.notifications li {
-  margin-bottom: 10px;/*ส่วนของประกาศแจ้งเตือน*/
-  background: #fff3cd;
-  padding: 10px;
-  border-left: 5px solid #ffc107;
+.alert-item {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    font-size: 0.95em;
+    color: #333;
+    border: 1px solid #ffc107;            /* ขอบสีเหลือง/ส้ม */
+}
+
+.alert-warning {
+    background-color: #fff3cd;            /*  พื้นหลังสีเหลืองอ่อนตามตัวอย่าง */
+    border-left: 5px solid #ffc107;       /*  เส้นแบ่งสีเหลือง/ส้มด้านซ้าย */
 }
 /*จบส่วนของประกาศแจ้งเตือน*/
-/*จบหน้าTeacherHome*/
+/*********************************จบหน้าTeacherHome********************************/
 
-/*ส่วนของรายละเอียดโครงงาน*/
-.project-detail {
-  background-color: #f9f9f9;
-  border-radius: 8px;
-}
 
-.project-info p,
-.project-info ul {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.project-info ul {
-  list-style: disc;
-}
-/*จบส่วนของรายละเอียดโครงงาน*/
-
-/*หน้าGraduationRequestForm*/
+/****************หน้าGraduationRequestForm******************/
 /*ส่วนแบบฟอร์ม*/
 input[type="text"],
 input[type="email"],
@@ -470,5 +562,149 @@ textarea {
   box-sizing: border-box;
 }
 /*จบกล่องความคิดเห็น*/
-/*จบหน้าGraduationRequestForm*/
+/***************จบหน้าGraduationRequestForm**************/
+
+
+/******************ส่วนหน้าของรายละเอียดโครงงาน**********************/
+
+.page-title {
+    font-size: 2em; /* ขนาดหัวข้อหน้า */
+    color: #343a40; /* สีหัวข้อ */
+    margin-bottom: 30px; /* ระยะห่างด้านล่าง */
+    border-bottom: 1px solid #eee; /* เส้นใต้หัวข้อ */
+    padding-bottom: 10px; /* ระยะห่างระหว่างหัวข้อกับเส้นใต้ */
+}
+
+.project-detail-section {
+    margin-bottom: 40px; /* ระยะห่างด้านล่างของส่วนนี้ */
+}
+
+.detail-group {
+    display: flex; /* ใช้ Flexbox เพื่อจัด label กับ value ให้อยู่ในบรรทัดเดียวกัน */
+    margin-bottom: 15px; /* ระยะห่างระหว่างแต่ละกลุ่มข้อมูล */
+    align-items: flex-start; /* จัดชิดด้านบนในแนวตั้ง เผื่อข้อมูลยาวหลายบรรทัด */
+}
+
+.detail-label {
+    font-weight: 600; /* ตัวหนาสำหรับป้ายกำกับ */
+    color: #495057; /* สีเข้มขึ้น */
+    flex-basis: 150px; /* กำหนดความกว้างพื้นฐานของ label */
+    flex-shrink: 0; /* ไม่ให้ label หดตัว */
+    margin-right: 15px; /* ระยะห่างระหว่าง label กับ value */
+}
+
+.detail-value {
+    flex-grow: 1; /* ให้ value ขยายเต็มพื้นที่ที่เหลือ */
+    color: #333; /* สีข้อความปกติ */
+}
+
+/* สไตล์เฉพาะสำหรับชื่อโครงการ (ถ้าต้องการเน้น) */
+.project-name-th {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #151515; /* สีน้ำเงินสำหรับชื่อโครงการหลัก */
+}
+
+.project-name-en {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #202021; /* สีเทาสำหรับชื่อโครงการภาษาอังกฤษ */
+}
+
+/* สไตล์สำหรับรายละเอียดโดยย่อ (อาจต้องการจัดย่อหน้า) */
+.description-group .detail-value {
+    white-space: pre-wrap; /* รักษารูปแบบการขึ้นบรรทัดใหม่จาก HTML */
+}
+
+/* สมาชิกในกลุ่ม */
+.student-list p {
+    margin-bottom: 3px; /* ระยะห่างระหว่างชื่อนักศึกษาแต่ละคน */
+}
+.student-list p:last-child {
+    margin-bottom: 0; /* ลบ margin ด้านล่างของคนสุดท้าย */
+}
+
+.section-title {
+    font-size: 1.5em; /* ขนาดหัวข้อส่วน */
+    color: #343a40;
+    margin-top: 40px; /* ระยะห่างด้านบน */
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dee2e6; /* เส้นใต้บางๆ */
+}
+
+/* ตารางเอกสาร */
+.document-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.document-table th, .document-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6; /* เส้นขอบตาราง */
+    vertical-align: middle; /* จัดกลางแนวตั้ง */
+}
+
+.document-table th {
+    background-color: #f8f9fa; /* สีพื้นหลังหัวตาราง */
+    font-weight: 600;
+    color: #495057;
+    border-top: 1px solid #dee2e6;
+}
+
+/* ตารางเอกสาร */
+
+/* สถานะเอกสาร */
+.doc-status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85em;
+    white-space: nowrap; /* ไม่ให้ข้อความขึ้นบรรทัดใหม่ */
+}
+
+.status-submitted {
+    background-color: #28a745; /* สีเขียว */
+    color: white;
+}
+
+.status-not-submitted {
+    background-color: #ffc107; /* สีเหลือง/ส้ม */
+    color: #343a40;
+}
+
+/* ลิงก์การดำเนินการในตาราง */
+.action-link {
+    display: inline-block; /* ทำให้สามารถกำหนด padding/margin ได้ */
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.2s;
+}
+
+.ddownload-link {
+    background-color: #2684e9;
+    color: white;
+    text-decoration: none;
+}
+
+.upload-link {
+    background-color: #6c757d; /* สีเทาสำหรับปุ่มอัปโหลด */
+    color: white;
+    text-decoration: none;
+}
+
+.upload-link:hover {
+    background-color: #545b62;
+    text-decoration: none;
+}
+
+/****************จบส่วนของรายละเอียดโครงงาน******************/
+
+
+
+
+
 

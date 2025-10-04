@@ -30,58 +30,65 @@
         </div>   
     </div>
 
-    <main>
-        <div class="profile">
-            <h3>ข้อมูลอาจารย์</h3>
-            <p><strong>ชื่อ:</strong> ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ </p>
-            <p><strong>ภาควิชา:</strong> ภาควิชาเทคโนโลยีสารสนเทศ </p>
-            <p><strong>อีเมล:</strong> supaporn.s@itm.kmutnb.ac.th </p>
+             <main class="container">
+        <h2>รายงานโครงการที่ปรึกษา (Project Reports)</h2>
+
+        <div class="controls-area">
+            <input type="text" placeholder="ค้นหาด้วยชื่อโครงการ, รหัสนักศึกษา..." class="search-input">
+            <select class="filter-select">
+                <option>สถานะโครงการ: ทั้งหมด</option>
+                <option>กำลังดำเนินการ</option>
+                <option>รอพิจราณา</option>
+                <option>ต้องแก้ไข</option>
+                <option>ผ่านแล้ว</option>
+            </select>
+            <button class="export-button">ส่งออกข้อมูล (Export)</button>
         </div>
 
-        <div class="projects">
-            <h3>โครงงานที่ดูแล</h3>
-            <table>
+        <div class="table-responsive">
+            <table class="project-table">
                 <thead>
                     <tr>
-                        <th>ชื่อโครงงาน</th>
-                        <th>นักศึกษา</th>
-                        <th>สถานะ</th>
-                        <th>รายงาน</th>
-                        <th>การจัดการ</th>
+                        <th>รหัสนักศึกษา</th>
+                        <th>ชื่อนักศึกษา</th>
+                        <th>ชื่อโครงการ</th>
+                        <th>วันที่ยื่น</th>
+                        <th>สถานะล่าสุด</th>
+                        <th>กำหนดส่งถัดไป</th>
+                        <th>การดำเนินการ</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>ระบบป้องกันเครื่อข่าย</td>
+                        <td>65012345</td>
                         <td>น.ส.นันทิชา ไชยขวัญดี</td>
-                        <td>รอตรวจ</td>
-                        <td><a href="#">ดาวน์โหลด</a></td>
-                        <td>
-                            <button class="approve">อนุมัติ</button>
-                            <button class="reject">ส่งกลับ</button>
-                        </td>
+                        <td>ระบบจัดการฐานข้อมูลโครงการวิจัย</td>
+                        <td>01/06/2567</td>
+                        <td><span class="status status-pending">รอดำเนินการ</span></td>
+                        <td>30/11/2567</td>
+                        <td><button class="action-btn view-btn">ดูรายละเอียด</button></td>
                     </tr>
                     <tr>
-                        <td>การวางระบบเครื่อข่าย</td>
+                        <td>65012345</td>
                         <td>น.ส.นันทิชา ไชยขวัญดี</td>
-                        <td>ผ่าน</td>
-                        <td><a href="#">ดาวน์โหลด</a></td>
-                        <td>
-                            <button class="approve">อนุมัติ</button>
-                            <button class="reject">ส่งกลับ</button>
-                        </td>
+                        <td>แอปพลิเคชันเพื่อสุขภาพ</td>
+                        <td>15/05/2566</td>
+                        <td><span class="status status-approved">ผ่านแล้ว</span></td>
+                        <td>-</td>
+                        <td><button class="action-btn view-btn">ดูรายละเอียด</button></td>
                     </tr>
-                    <!-- เอาไว้เพิ่มโครงงาน -->
-                </tbody>
+                     <tr>
+                        <td>65012345</td>
+                        <td>น.ส.นันทิชา ไชยขวัญดี</td>
+                        <td>การวิเคราะห์ Big Data</td>
+                        <td>10/08/2567</td>
+                        <td><span class="status status-rework">ต้องแก้ไข</span></td>
+                        <td>25/10/2567</td>
+                        <td><button class="action-btn view-btn">ดูรายละเอียด</button></td>
+                    </tr>
+                    </tbody>
             </table>
         </div>
-
-        <section class="feedback">
-            <h3>ให้คำแนะนำ</h3>
-            <textarea placeholder="เขียนคำแนะนำสำหรับนักศึกษา..."></textarea>
-            <br>
-            <button class="submit">ส่งคำแนะนำ</button>
-        </section>
     </main>
 
     </div>
@@ -90,7 +97,7 @@
             <div class="footer-left">
         <h3>อื่นๆ</h3>
         <ul>
-            <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1y7vnPRgfEhYKhXQVbHxwsdwM1kdxrpRc%2Fview%3Fusp%3Dsharing&h=AT25me3oUQqxi9kQCxX723da5SBsMU1qLoboOF0MvWpid5MX52f6VdV5v-VOSPSlpVg5EVGWXq1_64Xk5VHzoolRpxXp72QIjt1g5WW40QYoexaRIpDLNfTcZXRxVuRxIP4BPuu4AQGm6CdcAUkDDjXAqPFhnFmK&__tn__=-UK-R&c[0]=AT3jlIObfIGGfA3A1uBpUL9n6qO4dfWgmYJJGgrRZIVycCSb6PFWXJZquHACZHZ_xN76WsmucF2PlLvqiHFimAsaI0_X6tBO6fKDu2IofnuPZh18OnkwdcR1jJolVD-XeeUT14CjoUyNW5YnwDRkDHma8PINo7loERYWuIHmM55c4wUAAMAKe-ZaM-3QYr4">ตารางสอบ</a></li>
+            <li><a href="evaluation-section.html">เกณฑ์การให้คะแนน</a></li>
             <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1KU2qisg69m7mp3FwvtxrbTMmTbRrFdX_%3Fusp%3Ddrive_link&h=AT3XYAvYiVkW2-9SV7d4Wmsa3nmCkm_zIKGf27iGDHTfINFL9bAoGEID-Rav28gQLfcZCVVW1GfgNA-xNJzMBCzmkcAcDodnrK3jdiVZ2JpGjAs_no-WSH-b2FDAVVXIWPn8gqgz5Bi99y6MW23T6I2y56o2pK3g&__tn__=-UK-R&c[0]=AT3jlIObfIGGfA3A1uBpUL9n6qO4dfWgmYJJGgrRZIVycCSb6PFWXJZquHACZHZ_xN76WsmucF2PlLvqiHFimAsaI0_X6tBO6fKDu2IofnuPZh18OnkwdcR1jJolVD-XeeUT14CjoUyNW5YnwDRkDHma8PINo7loERYWuIHmM55c4wUAAMAKe-ZaM-3QYr4">ตรวจสอบรายชื่อสอบ</a></li>
         </ul>
         </div>

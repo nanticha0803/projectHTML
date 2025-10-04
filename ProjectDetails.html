@@ -32,50 +32,73 @@
         </div>   
     </div>
     
-        <main>
-         <section class="project-detail">
-              <h2>รายละเอียดโครงงานของนักศึกษา</h2>
-              <div class="project-info">
-                    <p><strong>ชื่อโครงงาน (TH):</strong>ระบบป้องกันเครื่อข่าย</p>
-                    <p><strong>ชื่อโครงงาน (EN):</strong>Network protection system</p>
-                    <p><strong>รายละเอียด:</strong>เป็นระบบที่ออกแบบมาเพื่อปกป้องข้อมูล ทรัพยากร และอุปกรณ์ภายในเครือข่ายจากภัยคุกคามต่าง ๆ เช่น มัลแวร์ แฮกเกอร์ หรือการเข้าถึงโดยไม่ได้รับอนุญาต</p>
-                    <p><strong>สมาชิกในกลุ่ม:</strong></p>
-                  <ul>
-                     <li>น.ส.นันทิชา ไชยขวัญดี (66022510542)</li>
-                     <li>นายณัฐภัทร แก้วเก่า (66559211002)</li>
-                  </ul>
-                    <p><strong>อาจารย์ที่ปรึกษา:</strong> ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</p>
-                    <p><strong>สถานะโครงงาน:</strong> อยู่ระหว่างพัฒนา (70%)</p>
-              </div>
+         <main class="container">
+        <h2 class="page-title">รายละเอียดโครงการของนักศึกษา</h2>
 
-                <h3>ไฟล์เอกสาร</h3>
-                <table>
-                   <thead>
-                     <tr>
-                         <th>ชื่อเอกสาร</th>
-                         <th>สถานะ</th>
-                         <th>วันที่อัปโหลด</th>
-                         <th>การดำเนินการ</th>
-                     </tr>
-                    </thead>
+        <div class="project-detail-section">
+            <div class="detail-group">
+                <span class="detail-label">ชื่อโครงการ (TH):</span>
+                <span class="detail-value project-name-th">ระบบป้องกันเครือข่าย</span>
+            </div>
+            <div class="detail-group">
+                <span class="detail-label">ชื่อโครงการ (EN):</span>
+                <span class="detail-value project-name-en">Network protection system</span>
+            </div>
+            <div class="detail-group description-group">
+                <span class="detail-label">รายละเอียดโดยย่อ:</span>
+                <span class="detail-value project-description">เป็นระบบที่ออกแบบมาเพื่อปกป้องข้อมูล ทรัพยากร และอุปกรณ์ภายในเครือข่ายจากภัยคุกคามต่าง ๆ เช่น มัลแวร์ แฮกเกอร์ หรือการเข้าถึงโดยไม่ได้รับอนุญาต</span>
+            </div>
+            <div class="detail-group">
+                <span class="detail-label">สมาชิกในกลุ่ม:</span>
+                <div class="detail-value student-list">
+                    <p>น.ส.นันทิชา ไชยขวัญดี (66022510542)</p>
+                    <p>นายณัฐภัทร แก้วเกา (66559211002)</p>
+                </div>
+            </div>
+            <div class="detail-group">
+                <span class="detail-label">อาจารย์ที่ปรึกษา:</span>
+                <span class="detail-value advisor-name">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</span>
+            </div>
+            <div class="detail-group">
+                <span class="detail-label">สถานะโครงการ:</span>
+                <span class="detail-value project-status">อยู่ระหว่างพัฒนา (70%)</span>
+            </div>
+        </div>
 
-                    <tbody>
-                      <tr>
-                         <td>Proposal.pdf</td>
-                         <td>ส่งแล้ว</td>
-                         <td>10/09/2025</td>
-                         <td><a href="#">ดาวน์โหลด</a></td>
-                      </tr>
-                      <tr>
-                         <td>ProgressReport.pdf</td>
-                         <td>ยังไม่ส่ง</td>
-                         <td>-</td>
-                         <td><a href="#">อัปโหลด</a></td>
-                      </tr>
-                    </tbody>
-                </table>
-            </section>
-        </main>
+        <h3 class="section-title">ไฟล์เอกสาร</h3>
+        <div class="document-section">
+            <table class="document-table">
+                <thead>
+                    <tr>
+                        <th>ชื่อเอกสาร</th>
+                        <th>สถานะ</th>
+                        <th>วันที่อัปโหลด</th>
+                        <th>การดำเนินการ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Proposal.pdf</td>
+                        <td><span class="doc-status status-submitted">ส่งแล้ว</span></td>
+                        <td>10/09/2025</td>
+                        <td><a href="#" class="action-link ddownload-link">ดาวน์โหลด</a></td>
+                    </tr>
+                    <tr>
+                        <td>ProgressReport.pdf</td>
+                        <td><span class="doc-status status-not-submitted">ยังไม่ส่ง</span></td>
+                        <td>-</td>
+                        <td><a href="#" class="action-link upload-link">อัปโหลด</a></td>
+                    </tr>
+                    <tr>
+                        <td>FinalReport.pdf</td>
+                        <td><span class="doc-status status-not-submitted">ยังไม่ส่ง</span></td>
+                        <td>-</td>
+                        <td><a href="#" class="action-link upload-link">อัปโหลด</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>    
 
     <footer>
         <div class="footer-container">

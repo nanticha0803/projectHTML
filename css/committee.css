@@ -19,7 +19,7 @@
 }
 
 .info-card h3 {
-    color: #333;
+    color: #333;/* สีเทาเข้มสำหรับหัวข้อ */
     margin-top: 0;
     font-size: 1.3em;
 }
@@ -36,7 +36,7 @@
 .summary-section h3, .announcement-section h3, .upcoming-section h3 {
     color: #444;
     margin-top: 30px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee; /* เส้นแบ่งใต้หัวข้อ */
     padding-bottom: 5px;
 }
 
@@ -46,6 +46,28 @@
 .info-card[style*="28a745"] { border-left-color: #28a745; }
 .info-card[style*="dc3545"] { border-left-color: #dc3545; }
 */
+
+/* CSS สำหรับตารางข้อมูล (Data Table) */
+.upcoming-section {
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.data-table th, .data-table td {
+    border: 1px solid #ddd; /* เส้นขอบตาราง */
+    padding: 10px;
+    text-align: left;
+    font-size: 0.95em;
+}
+.data-table th {
+    background-color: #f2f2f2;/* สีพื้นหลังหัวตาราง */
+    font-weight: bold;
+}
+
+/* จบCSS สำหรับตารางข้อมูล (Data Table) */
 
 /* CSS สำหรับส่วนประกาศ (Announcement Section) */
 .announcement-box {
@@ -119,7 +141,7 @@ border-radius: 8px
 .download-link {
     margin-top: 40px;          /* เว้นช่องว่างด้านบน 40 พิกเซล */
     padding: 20px;             /* เว้นช่องว่างภายใน 20 พิกเซล */
-    background-color: #e9ecef; /* กำหนดพื้นหลังเป็นสีเทาอ่อนมาก */
+    background-color: #eae8e6; /* กำหนดพื้นหลังเป็นสีเทาอ่อนมาก */
     border-radius: 5px;        /* ทำให้มุมโค้งมน 5 พิกเซล */
     text-align: center;        /* จัดข้อความภายในให้อยู่กึ่งกลาง */
 }
@@ -138,4 +160,27 @@ border-radius: 8px
 
 .download-btn:hover {
     background-color: #cc8400; /* เมื่อเมาส์ชี้ (Hover) ให้เปลี่ยนพื้นหลังเป็นสีส้มเข้มขึ้น */
+}
+
+/************************ปุ่มสถานะ**************************/
+.exportt-btn {
+    background-color: #2ecc71;
+}
+
+.status-evaluated {
+    background-color: #28a745; /* สีเขียว */
+    color: white; /* สีข้อความขาว */
+    border-radius: 4px;
+}
+
+.status-resubmit {
+    background-color: #dc3545; /* สีแดง */
+    color: white; /* สีข้อความขาว */
+    border-radius: 4px;
+}
+
+.status-pending{
+    background-color: #ffc107; /* สีเหลือง/ส้ม */
+    color: white; /* สีข้อความเข้ม */
+    border-radius: 4px;
 }

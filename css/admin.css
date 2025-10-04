@@ -1,4 +1,4 @@
-/*หน้า ADMIN*/
+/**********************หน้า ADMIN******************************/
 .container {
   padding: 30px;
   text-align: center;
@@ -28,9 +28,7 @@
 }
 
 /* ปุ่มส่งออกรายงาน */
-.report-btn {
-  margin-top: 30px;
-}
+
 
 .report-btn button {
   background: #2ecc71;
@@ -46,82 +44,12 @@
 .report-btn button:hover {
   background: #27ae60;
 }
-/*จบหน้า ADMIN*/
+/**********************จบหน้า ADMIN*********************/
 
-/*หน้าจำกัดสิทธิ์ผู้ใช้*/
-.container {
-  padding: 30px;
-  text-align: center;
-}
 
-/* layout บล็อคผู้ใช้ */
-.user-section {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);/*สร้างคอลัมน์ในgrid 1fr = 1 ส่วนแบ่งพื้นที่เท่ากัน*/
-  gap: 20px;/*ช่องว่างระหว่างแต่ละ grid item (ทั้งแนวตั้ง + แนวนอน)*/
-  margin: 30px auto;
-  max-width: 1000px;
-}
-
-/* กล่องผู้ใช้ */
-.user-box {
-  background: #fff;
-  border: 2px solid #ccc;/*เส้นขอบ*/
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-  transition: 0.3s ease;
-}
-
-.user-box h3 {
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.user-box p {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.user-box button {
-  background: #3498db;
-  border: none;
-  padding: 10px 15px;
-  color: #fff;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.user-box button:hover {
-  background: #2980b9;
-}
-
-/* ปุ่มบันทึก */
-.save-btn {
-  margin-top: 30px;
-}
-
-.save-btn button {
-  background: #2ecc71;
-  border: none;
-  padding: 15px 40px;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.save-btn button:hover {
-  background: #27ae60;
-}
-/*จบหน้าจำกัดสิทธิ์ผู้ใช้*/
-
-/*ปุ่ม search หน้าสรุปโครงงาน*/
+/************************ปุ่ม search หน้าสรุปโครงงาน*******************/
 .search-bar button {
-  flex: 0.8;
+  flex: none;
   display: flex;
   align-items: center;/*ใช้คู่กับ flex containerจะถูกจัดเรียงแบบ flex (แนวนอนเป็นค่าเริ่มต้น)*/
   justify-content: center;/*ใช้คู่กับ flex container จัดให้อยู่กึ่งกลางในแนวนอน*/
@@ -136,6 +64,27 @@
   box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* เงาตอนปกติ */
 }
 /*จบปุ่ม search หน้าสรุปโครงงาน*/
+
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.summary-table th, .summary-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6; /* เส้นขอบตาราง */
+    vertical-align: middle; /* จัดกลางแนวตั้ง */
+}
+
+.summary-table th {
+    background-color: #f8f9fa; /* สีพื้นหลังหัวตาราง */
+    font-weight: 600;
+    color: #495057;
+    border-top: 1px solid #dee2e6;
+}
+/*หน้าสรุปโครงงาน*/
 
 /*หน้า setting */
 h1 {
@@ -171,11 +120,104 @@ label {
 }
 
 .btn-save {
-  background: #3498db;
+  background: #2ecc71;
   color: #fff;
 }
 .btn-cancel {
   background: #e74c3c;
   color: #fff;
 }
-/*หน้า setting */
+/********************หน้า setting ************************/
+
+/***********************หน้าเกณฑ์การให้คะแนน************************/
+.evaluation-section {
+    margin-bottom: 30px; /* เว้นระยะห่างด้านล่างแต่ละส่วน */
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.section-heading-orange {
+    font-size: 1.3em;
+    color: #0b0b0a; /* ใช้สีส้มหลักของเรา */
+    border-bottom: 2px solid #ccc; /* ขีดเส้นใต้หัวข้อ */
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.criteria-table {
+    width: 100%;
+    border-collapse: collapse; /* ลบเส้นคู่ */
+}
+
+.criteria-table th, .criteria-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 0.95em;
+}
+
+.criteria-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #444;
+}
+
+
+/* ส่วนสรุปคะแนนรวม */
+.total-score-box {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 15px 20px;
+    background-color: #ff8c00; /* พื้นหลังสีส้มหลัก */
+    color: white;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/**********************จบหน้าเกณฑ์การให้คะแนน****************/
+
+/******************************จัดกลุ่มรายการคู่มือ*************/
+.guide-list {
+    margin-top: 20px;
+}
+
+/* รูปแบบของแต่ละหัวข้อหลัก  */
+.guide-item {
+    margin-bottom: 25px; /* เว้นระยะห่างระหว่างแต่ละหัวข้อหลัก */
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: #fcfcfc;
+    /* เน้นด้วยเส้นสีน้ำเงินทางซ้าย เพื่อให้ต่างจากสีส้มของระบบ */
+    border-left: 5px solid #e29313; 
+}
+
+/* หัวข้อย่อยในคู่มือ */
+.guide-title {
+    color: #0b0b0b; /* สีน้ำเงินสำหรับหัวข้อหลักของคู่มือ */
+    font-size: 1.2em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* สไตล์สำหรับข้อความขั้นตอนย่อย (1.1, 1.2, etc.) */
+.guide-item p {
+    margin: 5px 0;
+    padding-left: 10px; /* เยื้องเล็กน้อย */
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.6; /* ระยะห่างบรรทัด */
+}
+
+/* เน้นคำสำคัญในคู่มือ */
+.guide-item p strong {
+    color: #ff8c00; /* ใช้สีส้มหลักของระบบเน้นคำสั่งที่ต้องกด */
+}
+/*****************************จัดกลุ่มรายการคู่มือ***********************/
