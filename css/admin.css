@@ -221,3 +221,22 @@ label {
     color: #ff8c00; /* ใช้สีส้มหลักของระบบเน้นคำสั่งที่ต้องกด */
 }
 /*****************************จัดกลุ่มรายการคู่มือ***********************/
+
+/*****************************สถานะหน้าสรุปโครงงาน**********************/
+.status-done {
+    background-color: #28a745; /* สีเขียว */
+    color: white; /* สีข้อความขาว */
+    border-radius: 4px;
+}
+
+.status-pending {
+    background-color: #dc3545; /* สีแดง */
+    color: white; /* สีข้อความขาว */
+    border-radius: 4px;
+}
+
+.status-doing{
+    background-color: #ffc107; /* สีเหลือง/ส้ม */
+    color: white; /* สีข้อความเข้ม */
+    border-radius: 4px;
+}

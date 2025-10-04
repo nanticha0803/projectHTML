@@ -210,14 +210,14 @@ header{
 /* จบส่วนข้อมูลส่วนตัว */
 /* ส่วนของตราง */
 table{
-    border: 1px solid black;
+    
     margin: 16px 0;
     width: 90%;
 }
 th,td{
-    border: 1px solid black;
+    border: 1px solid #ccc;
     text-align: left;
-    border: 1px solid black;
+    border: 1px solid #ccc;
 }
 /* จบส่วนของตาราง */
 .image{
@@ -349,6 +349,7 @@ h2 {
 .project-table {
     width: 100%;
     border-collapse: collapse;
+    border: none; 
     min-width: 800px;
 }
 .project-table th,.project-table td {
